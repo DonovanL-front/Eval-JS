@@ -1,9 +1,9 @@
 body, button:hover {
   font-family: 'Lato' , sans-serif;
-  font-size: clamp(15px, 1.5vw, 50px);
+  font-size: clamp(15px, 1.5vw, 70px);
 }
 
-.contain .name-player, .newGame, .roll, .hold {
+.contain .name-player, .contain .global-score, .round-box, .round-box .round-score, button {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -20,14 +20,15 @@ body, button:hover {
 
 body {
   text-transform: uppercase;
-  background: url(/Eval-Roll-A-Dice/IMG/raspberries-1426859_640.jpg) center/cover no-repeat;
+  background: var(--bs-gradient);
   height: 100vh;
 }
 
 .contain {
   background: #fff;
-  height: 50vh;
-  width: 50vw;
+  height: 45vh;
+  max-width: 1200px;
+  width: 65vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,9 +54,36 @@ body {
 }
 
 .contain .name-player {
-  position: absolute;
   top: 20%;
-  font-weight: 100;
+  font-weight: 200;
+  font-size: clamp(25px, 1.9vw, 100px);
+}
+
+.contain .global-score {
+  top: 40%;
+  color: #EB4D4D;
+  font-size: clamp(25px, 3vw, 110px);
+}
+
+.round-box {
+  background: #EB4D4D;
+  width: 5vw;
+  height: 8vh;
+  top: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1vh;
+  font-size: clamp(10px, 0.5vw, 30px);
+}
+
+.round-box .round-score {
+  color: white;
+  padding-top: 25px;
+  font-size: clamp(15px, 2.5vw, 50px);
 }
 
 button {
@@ -63,8 +91,15 @@ button {
   background: transparent;
   border: none;
   font-size: clamp(15px, 1vw, 50px);
+  font-weight: 300;
   min-width: 120px;
-  width: 10vw;
+  width: 15vw;
+}
+
+button i {
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
 }
 
 button i {
@@ -84,6 +119,6 @@ button i:hover {
 }
 
 .hold {
-  top: 75%;
+  top: 80%;
 }
 /*# sourceMappingURL=style.css.map */
