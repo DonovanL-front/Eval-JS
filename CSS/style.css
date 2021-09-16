@@ -3,7 +3,7 @@ body, button:hover {
   font-size: clamp(15px, 1.5vw, 70px);
 }
 
-.contain .name-player, .contain .global-score, .round-box, .round-box .round-score, button {
+.contain .name-player, .contain .global-score, .dice, .round-box, .round-box .round-score, button {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -41,7 +41,6 @@ body {
 .contain .player-0 {
   width: 50%;
   float: left;
-  background: #f1f1f1;
   height: 100%;
   position: relative;
 }
@@ -63,6 +62,12 @@ body {
   top: 40%;
   color: #EB4D4D;
   font-size: clamp(25px, 3vw, 110px);
+}
+
+.dice {
+  top: 45%;
+  width: 5vw;
+  height: 5vw;
 }
 
 .round-box {

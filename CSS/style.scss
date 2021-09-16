@@ -35,7 +35,6 @@ body {
     .player-0 { 
         width: 50%;
         float: left;
-        background: #f1f1f1;
         height: 100%; 
         position: relative;
     }
@@ -59,6 +58,16 @@ body {
     }
 
 }
+
+
+.dice { 
+    @extend %absoluteCenter; 
+    top: 45%;
+    width: 5vw;
+    height: 5vw;
+}
+
+
 .round-box { 
     background:#EB4D4D;
     width: 5vw;
