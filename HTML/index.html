@@ -19,37 +19,39 @@
             <!-- Container -->
             <div class="contain col-sm-10">
                 <!-- Player 1 -->
-                <div class="player-0 col-sm-5" id="box-player-0">
+                <div class="player-0 col-sm-5 active" id="box-player-0">
                     <div class="name-player" id="name-0">PLAYER 1</div>
-                    <div class="global-score-0" id="score-0">0</div>
+                    <div class="global-score" id="score-0">0</div>
                     
-                    <div class="round-box-0">
-                        <div class="round-text-0">Round</div>
-                        <div class="round-score-0" id="round-0">0</div>
+                    <div class="round-box">
+                        <div class="round-text">Round</div>
+                        <div class="round-score" id="round-0">0</div>
                     </div>
                 </div>
                 <div class="player-1 col-sm-5" id="box-player-1">
                     <div class="name-player" id="name-1">Player 2</div>
-                    <div class="global-score-1" id="score-1">0</div>
+                    <div class="global-score" id="score-1">0</div>
 
-                    <div class="round-box-1">
-                        <div class="round-text-1">Round</div>
-                        <div class="round-score-1" id="round-1"></div>
+                    <div class="round-box">
+                        <div class="round-text">Round</div>
+                        <div class="round-score" id="round-1">0</div>
                     </div>
                 </div>
             
-                <button class="newGame">
+                <button class="newGame" id="newGame">
                     <i class="bi bi-plus-circle"></i>
                     new game
                 </button>
-                <button class="roll">
+                <button class="roll" id ="rollDice">
                     <i class="bi bi-arrow-repeat"></i>
-                    Roll
+                    Roll Dice
                 </button>
-                <button class="hold">
+                <button class="hold" id="hold-round">
                     <i class="bi bi-save"></i>
                     hold
                 </button>
+
+                <img src="/Eval-Roll-A-Dice/IMG/dès-5.png" alt="dice" class="dice" style="display: none;">
             </div>
         </div>
     </div>

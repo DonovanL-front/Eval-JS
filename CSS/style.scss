@@ -1,6 +1,6 @@
 %littleFont { 
     font-family: 'Lato' , sans-serif;
-    font-size: clamp(15px , 1.5vw , 50px);
+    font-size: clamp(15px , 1.5vw , 70px);
 }
 
 %absoluteCenter { 
@@ -18,14 +18,15 @@
 body { 
     text-transform: uppercase;
     @extend %littleFont;
-    background: url(/Eval-Roll-A-Dice/IMG/raspberries-1426859_640.jpg)center/cover no-repeat; 
+    background: var(--bs-gradient) ;
     height: 100vh;
 }
 
 .contain { 
     background: #fff;
-    height: 50vh;
-    width: 50vw;
+    height: 45vh;
+    max-width: 1200px;
+    width: 65vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,7 +35,6 @@ body {
     .player-0 { 
         width: 50%;
         float: left;
-        background: #f1f1f1;
         height: 100%; 
         position: relative;
     }
@@ -45,10 +45,45 @@ body {
         position: relative;
     }
     .name-player { 
-        position: absolute; 
         @extend %absoluteCenter; 
         top: 20%;
-        font-weight: 100;
+        font-weight: 200;
+        font-size: clamp(25px , 1.9vw , 100px);
+    }
+    .global-score {
+        @extend %absoluteCenter; 
+        top: 40%;
+        color: #EB4D4D;
+        font-size: clamp(25px , 3vw , 110px);
+    }
+
+}
+
+
+.dice { 
+    @extend %absoluteCenter; 
+    top: 45%;
+    width: 5vw;
+    height: 5vw;
+}
+
+
+.round-box { 
+    background:#EB4D4D;
+    width: 5vw;
+    height: 8vh;
+    @extend %absoluteCenter;
+    top: 75%;
+    display: flex ;
+    justify-content: center;
+    padding-top: 1vh;
+    font-size: clamp(10px , 0.5vw , 30px);
+    .round-score { 
+        color:white;
+        @extend %absoluteCenter; 
+        padding-top: 25px ;
+        font-size: clamp(15px , 2.5vw , 50px);
+
     }
 }
 button { 
@@ -56,12 +91,18 @@ button {
     background: transparent;
     border: none;
     font-size: clamp(15px ,1vw , 50px);
+    font-weight: 300;
     min-width: 120px;
-    width: 10vw; 
-
+    width: 15vw; 
+    @extend %absoluteCenter;
+    i { 
+        margin-right: 15px;
+        width: 40px; 
+        height: 40px;
+    }
     &:hover { 
-        
         @extend %littleFont;
+        
     }
     i { 
         color : red;
@@ -74,14 +115,11 @@ button {
 
 
 .newGame { 
-    @extend %absoluteCenter; 
     top: 15%;
 }
 .roll { 
-    @extend %absoluteCenter;
     top: 65%;
 }
 .hold { 
-    @extend %absoluteCenter; 
-    top : 75%
+    top : 80%
 }
