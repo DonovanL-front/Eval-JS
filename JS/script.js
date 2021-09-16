@@ -47,15 +47,14 @@ holdRound.addEventListener("click", () => {
 });
 
 function nextPlayer() {
+    // Vérifie qui est le joueur actif y attribut les classes nécéssaires
     activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
-    round = 0;
-    
+    round = 0 ;
     
     document.querySelector(".box-player-0").classList.toggle("active");
     document.querySelector(".box-player-1").classList.toggle("active");
     document.querySelector(".box-player-0").classList.toggle("activePlayer");
     document.querySelector(".box-player-1").classList.toggle("activePlayer");
-
     document.querySelector("#round-0").textContent = "0";
     document.querySelector("#round-1").textContent = "0";
 }
@@ -68,7 +67,7 @@ function init() {
     round = 0;
     activePlayer = 0;
     runGame = true;
-    
+    // Un grand carfanahomme de manipulation du DOM :)
     document.querySelector("#round-0").textContent = "0";
     document.querySelector("#round-1").textContent = "0";
     document.querySelector("#score-0").textContent = "0";
