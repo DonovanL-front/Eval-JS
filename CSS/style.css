@@ -1,5 +1,5 @@
 body, button:hover {
-  font-family: 'Lato' , sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: clamp(15px, 1.5vw, 70px);
 }
 
@@ -26,9 +26,10 @@ body {
 
 .contain {
   background: #fff;
-  height: 45vh;
-  max-width: 1200px;
-  width: 65vw;
+  height: 55vh;
+  max-width: 1600px;
+  min-width: 300px;
+  width: 85vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,13 +56,14 @@ body {
 .contain .name-player {
   top: 20%;
   font-weight: 200;
-  font-size: clamp(25px, 1.9vw, 100px);
+  font-size: clamp(15px, 1.9vw, 100px);
 }
 
 .contain .global-score {
-  top: 40%;
-  color: #EB4D4D;
-  font-size: clamp(25px, 3vw, 110px);
+  top: 35%;
+  color: #eb4d4d;
+  font-size: clamp(15px, 7vw, 110px);
+  font-weight: 100;
 }
 
 .dice {
@@ -71,7 +73,8 @@ body {
 }
 
 .round-box {
-  background: #EB4D4D;
+  font-family: "Lato", sans-serif;
+  background: #eb4d4d;
   width: 5vw;
   height: 8vh;
   top: 75%;
@@ -95,7 +98,7 @@ button {
   text-transform: uppercase;
   background: transparent;
   border: none;
-  font-size: clamp(15px, 1vw, 50px);
+  font-size: clamp(10px, 1vw, 50px);
   font-weight: 300;
   min-width: 120px;
   width: 15vw;
@@ -129,5 +132,45 @@ button i:hover {
 
 .active {
   background: #f1f1f1;
+}
+
+.activePlayer::after {
+  content: '';
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 50%;
+  background: red;
+  display: block;
+  position: relative;
+  top: 19%;
+  left: 75%;
+}
+
+@media screen and (max-width: 960px) {
+  .contain {
+    width: 90vw;
+    height: 80vh;
+  }
+  .round-box {
+    width: 15vw;
+    height: 10vh;
+  }
+  .dice {
+    width: 15vw;
+    height: 15vw;
+  }
+  .activePlayer::after {
+    left: 75%;
+  }
+}
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .round-box {
+    height: 15vh;
+    width: 15vw;
+  }
+  .global-score {
+    font-size: clamp(15px, 1.8vw, 50px);
+  }
 }
 /*# sourceMappingURL=style.css.map */

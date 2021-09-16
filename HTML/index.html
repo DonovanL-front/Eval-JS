@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roll a dice</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/Eval-Roll-A-Dice/BOOTSTRAP/bootstrap.css">
-    <link rel="stylesheet" href="/Eval-Roll-A-Dice/CSS/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/Eval-Roll-A-Dice/BOOTSTRAP/bootstrap.css" />
+    <link rel="stylesheet" href="/Eval-Roll-A-Dice/CSS/style.css" />
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
-        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-      </style>
-</head>
-<body>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+    </style>
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="row no-gutters">
-            <!-- Container -->
-            <div class="contain col-sm-10">
-                <!-- Player 1 -->
-                <div class="box-player-0 col-sm-5 active" id="box-player-0">
-                    <div class="name-player" id="name-0">PLAYER 1</div>
-                    <div class="global-score" id="score-0">0</div>
-                    
-                    <div class="round-box">
-                        <div class="round-text">Round</div>
-                        <div class="round-score" id="round-0">0</div>
-                    </div>
-                </div>
-                <div class="box-player-1 col-sm-5" id="box-player-1">
-                    <div class="name-player" id="name-1">Player 2</div>
-                    <div class="global-score" id="score-1">0</div>
-
-                    <div class="round-box">
-                        <div class="round-text">Round</div>
-                        <div class="round-score" id="round-1">0</div>
-                    </div>
-                </div>
-            
-                <button class="newGame" id="newGame">
-                    <i class="bi bi-plus-circle"></i>
-                    new game
-                </button>
-                <button class="roll" id ="rollDice">
-                    <i class="bi bi-arrow-repeat"></i>
-                    Roll Dice
-                </button>
-                <button class="hold" id="hold-round">
-                    <i class="bi bi-save"></i>
-                    hold
-                </button>
-
-                <img src="/Eval-Roll-A-Dice/IMG/dès-5.png" alt="dice" class="dice" style="display: none;">
+      <div class="row no-gutters">
+        <!-- Container -->
+        <div class="contain col-sm-10">
+          <!-- Player 1 -->
+          <div class="box-player-0 col-sm-5 active activePlayer" id="box-player-0">
+            <div class="name-player" id="name-0">PLAYER 1</div>
+            <div class="global-score" id="score-0">0</div>
+            <!-- Score round -->
+            <div class="round-box">
+              <div class="round-text">Round</div>
+              <div class="round-score" id="round-0">0</div>
             </div>
+          </div>
+          <!-- Player 2 -->
+          <div class="box-player-1 col-sm-5" id="box-player-1">
+            <div class="name-player" id="name-1">Player 2</div>
+            <div class="global-score" id="score-1">0</div>
+            <!-- round 2  -->
+            <div class="round-box">
+              <div class="round-text">Round</div>
+              <div class="round-score" id="round-1">0</div>
+            </div>
+          </div>
+
+          <button class="newGame" id="newGame">
+            <i class="bi bi-plus-circle"></i>
+            new game
+          </button>
+          <button class="roll" id="rollDice">
+            <i class="bi bi-arrow-repeat"></i>
+            Roll Dice
+          </button>
+          <button class="hold" id="hold-round">
+            <i class="bi bi-save"></i>
+            hold
+          </button>
+
+          <img
+            src="/Eval-Roll-A-Dice/IMG/dès-1.png"
+            alt="dice"
+            class="dice"
+            style="display: none"
+          />
         </div>
+      </div>
     </div>
     <script src="/Eval-Roll-A-Dice/JS/script.js"></script>
-  
-
-</body>
+  </body>
 </html>
