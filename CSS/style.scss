@@ -32,13 +32,13 @@ body {
     left: 50%;
     transform: translate(-50% , -50%);
     box-shadow: -5px -15px 55px  rgba(0, 0, 0, 0.596);
-    .player-0 { 
+    .box-player-0 { 
         width: 50%;
         float: left;
         height: 100%; 
         position: relative;
     }
-    .player-1 { 
+    .box-player-1 { 
         width:50%; 
         float: right; 
         height: 100%;
@@ -122,4 +122,8 @@ button {
 }
 .hold { 
     top : 80%
+}
+
+.active { 
+    background: #f1f1f1;
 }

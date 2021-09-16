@@ -38,14 +38,14 @@ body {
           box-shadow: -5px -15px 55px rgba(0, 0, 0, 0.596);
 }
 
-.contain .player-0 {
+.contain .box-player-0 {
   width: 50%;
   float: left;
   height: 100%;
   position: relative;
 }
 
-.contain .player-1 {
+.contain .box-player-1 {
   width: 50%;
   float: right;
   height: 100%;
@@ -125,5 +125,9 @@ button i:hover {
 
 .hold {
   top: 80%;
+}
+
+.active {
+  background: #f1f1f1;
 }
 /*# sourceMappingURL=style.css.map */
