@@ -1,4 +1,89 @@
+body, button:hover {
+  font-family: 'Lato' , sans-serif;
+  font-size: clamp(15px, 1.5vw, 50px);
+}
+
+.contain .name-player, .newGame, .roll, .hold {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-  background: red;
+  text-transform: uppercase;
+  background: url(/Eval-Roll-A-Dice/IMG/raspberries-1426859_640.jpg) center/cover no-repeat;
+  height: 100vh;
+}
+
+.contain {
+  background: #fff;
+  height: 50vh;
+  width: 50vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: -5px -15px 55px rgba(0, 0, 0, 0.596);
+          box-shadow: -5px -15px 55px rgba(0, 0, 0, 0.596);
+}
+
+.contain .player-0 {
+  width: 50%;
+  float: left;
+  background: #f1f1f1;
+  height: 100%;
+  position: relative;
+}
+
+.contain .player-1 {
+  width: 50%;
+  float: right;
+  height: 100%;
+  position: relative;
+}
+
+.contain .name-player {
+  position: absolute;
+  top: 20%;
+  font-weight: 100;
+}
+
+button {
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  font-size: clamp(15px, 1vw, 50px);
+  min-width: 120px;
+  width: 10vw;
+}
+
+button i {
+  color: red;
+}
+
+button i:hover {
+  margin-right: 45px;
+}
+
+.newGame {
+  top: 15%;
+}
+
+.roll {
+  top: 65%;
+}
+
+.hold {
+  top: 75%;
 }
 /*# sourceMappingURL=style.css.map */
